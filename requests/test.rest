@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:3001
+
+###
+GET {{baseUrl}}/api/persons
+
+###
+GET {{baseUrl}}/info
+
+###
+GET {{baseUrl}}/api/persons/6382c76ffef900bcafa41cd9
+
+###
+DELETE {{baseUrl}}/api/persons/6382a320c45a203f8496b551
+
+###
+POST {{baseUrl}}/api/persons
+Content-Type: application/json
+
+{
+  "name": "Ada Lovelace",
+  "number": "040-1231-232"
+}
+
+###
+PUT {{baseUrl}}/api/persons/id
+Content-Type: application/json
+
+{
+  "name": "Dillon Patel",
+  "number": "040-1231-232"
+}
